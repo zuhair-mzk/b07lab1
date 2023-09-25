@@ -1,12 +1,15 @@
 public class Polynomial{
     double[] coefficients;
+    int [] exponents; 
 
     public Polynomial(){
         coefficients = new double[1];
+        exponents = new int[1];
     }    
 
-    public Polynomial(double[] given_coeff) {
+    public Polynomial(double[] given_coeff, int[] given_exp) {
         coefficients = given_coeff;
+        exponents = given_exp;
     }
 
     public Polynomial add(Polynomial p3) {
